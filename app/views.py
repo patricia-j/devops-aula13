@@ -86,3 +86,14 @@ def lista_candidatos(request):
         })
     )
 
+def locais_prova(request):
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/local_provas.html',
+        context_instance = RequestContext(request,
+        {
+            'title':'Lista de Locais',
+        })
+    )
+
