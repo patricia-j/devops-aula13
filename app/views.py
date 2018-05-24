@@ -79,7 +79,7 @@ def lista_candidatos(request):
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/templates/lista_candidatos.html',
+        'app/templates/lista_candidato.html',
         context_instance = RequestContext(request,
         {
             'title':'Lista Candidatoss',
