@@ -13,14 +13,14 @@ class Curso(models.Model):
 class Vestibular(models.Model):
     nome = models.CharField(max_length=200)
     
- class Candidato(models.Model):
+class Candidato(models.Model):
     nome = models.CharField(max_length=200)
     rg = models.CharField(max_length=9)
     cpf = models.CharField(max_length=11)
     endereco = models.CharField(max_length=200)
     telefone = models.CharField(max_length=25)
     
-  class Locais_Prova(models.Model):
+class Locais_Prova(models.Model):
     nome_da_escola = models.CharField(max_length=200)
     cidade = models.CharField(max_length=200)
     endereco = models.CharField(max_length=200)
