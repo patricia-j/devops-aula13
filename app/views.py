@@ -96,7 +96,7 @@ def local_prova(request):
         context_instance = RequestContext(request,
         {
             'title':'Lista de Locais',
-            'Locais_Prova': Locais_Prova.objects.all(),
+            'locais': Locais_Prova.objects.all(),
             'year':datetime.now().year,
         })
     )
