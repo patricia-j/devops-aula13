@@ -20,7 +20,7 @@ class Candidato(models.Model):
     endereco = models.CharField(max_length=200)
     telefone = models.CharField(max_length=25)
     
-class Locais_Prova(models.Model):
+class Local(models.Model):
     nome_da_escola = models.CharField(max_length=200)
     cidade = models.CharField(max_length=200)
     endereco = models.CharField(max_length=200)
